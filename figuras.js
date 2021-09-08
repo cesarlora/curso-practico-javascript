@@ -64,15 +64,24 @@ console.groupEnd();
 // comienza la magia 
 
 function calcularPerimetroCuadrado() {
-    var input = document.getElementById("inputCuadrado");
+    var input = document.getElementById("inputCuadrado"); 
     var value = input.value;
     var perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    // alert(perimetro);
+
+    var resultadoFinalText = document.getElementById("textP");
+
+    resultadoFinalText.innerText = "Resultado final del perimetro de un cuadrado " + perimetro
+
 }
 
 function calcularAreaCuadrado() {
     var input = document.getElementById("inputCuadrado");
     var value = input.value;
     var area = areaCuadrado(value);
-    alert(area);
+    // alert(area);
+
+    var resultadoFinalText = document.getElementById("textP");
+
+    resultadoFinalText.innerText = "Resultado final del area de un cuadrado " + area
 }
